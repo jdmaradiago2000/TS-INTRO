@@ -28,5 +28,8 @@ function curar(personaje: PersonajeLOR, curarX: number): void {
 }
 
 const nuevoPersonaje: PersonajeLOR = {
-  
+  nombre: 'Krudan',
+  pv: 40,
 };
+
+curar(nuevoPersonaje, 20);
