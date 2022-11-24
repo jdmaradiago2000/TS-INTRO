@@ -17,3 +17,16 @@ function multiplicar(
 const resultado = multiplicar(5, 0, 10);
 
 console.log(resultado);
+
+interface PersonajeLOR {
+  nombre: string;
+  pv: number;
+}
+
+function curar(personaje: PersonajeLOR, curarX: number): void {
+  personaje.pv += curarX;
+}
+
+const nuevoPersonaje: PersonajeLOR = {
+  
+};
