@@ -2,10 +2,23 @@
   ===== Código de TypeScript =====
 */
 
-const superHeroe = {
+interface Direccion {
+  calle: string;
+  pais: string;
+  ciudad: string;
+}
+
+interface SuperHeroe {
+  nombre: string;
+  edad: number;
+  direccion: Direccion;
+  mostrarDireccion();
+}
+
+const superHeroe: SuperHeroe = {
   nombre: 'Spiderman',
   edad: 30,
-  dirección: {
+  direccion: {
     calle: 'Main st',
     pais: 'USA',
     ciudad: 'New York',
