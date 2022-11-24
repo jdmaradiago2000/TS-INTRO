@@ -2,7 +2,7 @@
   ===== Código de TypeScript =====
 */
 
-const superHero = {
+const superHeroe = {
   nombre: 'Spiderman',
   edad: 30,
   dirección: {
@@ -17,5 +17,5 @@ const superHero = {
   },
 };
 
-const direccion = superHero.mostrarDireccion();
+const direccion = superHeroe.mostrarDireccion();
 console.log(direccion);
