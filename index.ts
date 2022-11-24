@@ -14,6 +14,6 @@ function multiplicar(
   return numero1 * base;
 }
 
-const resultado = multiplicar(5, 10);
+const resultado = multiplicar(5, 0, 10);
 
 console.log(resultado);
