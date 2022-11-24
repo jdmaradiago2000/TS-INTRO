@@ -16,11 +16,12 @@ function multiplicar(
 
 const resultado = multiplicar(5, 0, 10);
 
-console.log(resultado);
+// console.log(resultado);
 
 interface PersonajeLOR {
   nombre: string;
   pv: number;
+  mostrarHP: () => void;
 }
 
 function curar(personaje: PersonajeLOR, curarX: number): void {
@@ -29,7 +30,12 @@ function curar(personaje: PersonajeLOR, curarX: number): void {
 
 const nuevoPersonaje: PersonajeLOR = {
   nombre: 'Krudan',
-  pv: 40,
+  pv: 50,
+  mostrarHP() {
+    console.log('Puntos de Vida', this.pv);
+  },
 };
 
 curar(nuevoPersonaje, 20);
+
+nuevoPersonaje.mostrarHP();
