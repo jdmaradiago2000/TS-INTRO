@@ -27,9 +27,9 @@ export function calculaISV(productos: Producto[]): [number, number] {
   return [total, total * 0.15];
 }
 
-const articulos = [telefono, tablet];
+// const articulos = [telefono, tablet];
 
-const [total, isv] = calculaISV(articulos);
+// const [total, isv] = calculaISV(articulos);
 
-console.log('Total: ', total);
-console.log('Impuestos sobre venta: ', isv);
+// console.log('Total: ', total);
+// console.log('Impuestos sobre venta: ', isv);
